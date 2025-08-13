@@ -1,69 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Introduction to HTML5: Accessibility & SEO Basics</title>
-  <meta name="description" content="Learn the basics of HTML5 structure, accessibility, and SEO by building a semantic web page.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enhanced Form Example (HTML Only)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      max-width: 800px;
+      padding: 0 10px;
+    }
+    header, main, footer {
+      margin-bottom: 2em;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 1.5em;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 1em;
+      margin-bottom: 1.5em;
+    }
+    legend {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.3em;
+      margin-top: 1em;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.4em;
+      font-size: 1em;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 1.2em;
+      padding: 0.6em 1.2em;
+      font-size: 1em;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Introduction to HTML5: Accessibility & SEO Basics</h1>
-    <nav aria-label="Main Navigation">
-      <ul>
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#structure">Semantic Structure</a></li>
-        <li><a href="#accessibility">Accessibility</a></li>
-        <li><a href="#seo">SEO Tips</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <h1>Welcome to Our Enhanced Form Page</h1>
+    <p>This page demonstrates semantic HTML5 structure with well-structured content, media integration, and a comprehensive accessible form.</p>
   </header>
 
   <main>
-    <section id="overview" aria-labelledby="overview-heading">
-      <h2 id="overview-heading">Overview</h2>
-      <p>
-        This page demonstrates how to use HTML5 semantic tags to create accessible and SEO-friendly web content. 
-        It is structured for both human readers and search engines.
-      </p>
-    </section>
-
-    <section id="structure" aria-labelledby="structure-heading">
-      <h2 id="structure-heading">Semantic Structure</h2>
-      <p>
-        HTML5 provides elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> to organize content meaningfully.
-      </p>
-    </section>
-
-    <section id="accessibility" aria-labelledby="accessibility-heading">
-      <h2 id="accessibility-heading">Accessibility</h2>
-      <p>
-        Using semantic tags and ARIA attributes helps screen readers and assistive technologies navigate your site. 
-        Proper heading order and descriptive links improve usability for everyone.
-      </p>
-    </section>
-
-    <section id="seo" aria-labelledby="seo-heading">
-      <h2 id="seo-heading">SEO Tips</h2>
+    <section aria-labelledby="features-list-heading">
+      <h2 id="features-list-heading">Key Features of Our Service</h2>
       <ul>
-        <li>Use clear, descriptive headings (<code>&lt;h1&gt;</code> to <code>&lt;h3&gt;</code>).</li>
-        <li>Include relevant keywords in your content and metadata.</li>
-        <li>Write human-readable, concise text.</li>
-        <li>Structure your page for easy crawling.</li>
+        <li>Fast and reliable customer support</li>
+        <li>User-friendly interface with accessibility</li>
+        <li>Secure data handling and privacy protection</li>
+        <li>Multiple service tiers to suit your needs</li>
       </ul>
     </section>
 
-    <section id="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Contact</h2>
-      <address>
-        For questions, email <a href="mailto:info@example.com">info@example.com</a>.
-      </address>
+    <section aria-labelledby="pricing-table-heading">
+      <h2 id="pricing-table-heading">Pricing Plans</h2>
+      <table>
+        <caption>Our Pricing Plans Overview</caption>
+        <thead>
+          <tr>
+            <th scope="col">Plan</th>
+            <th scope="col">Monthly Price</th>
+            <th scope="col">Features</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Basic</td>
+            <td>ksh 109.00</td>
+            <td>Access to core features, email support</td>
+          </tr>
+          <tr>
+            <td>Standard</td>
+            <td>klsh19.99</td>
+            <td>Includes Basic + priority support, more storage</td>
+          </tr>
+          <tr>
+            <td>Premium</td>
+            <td>ksh29.99</td>
+            <td>All Standard features + dedicated account manager, extra customization</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="media-section-heading">
+      <h2 id="media-section-heading">Explore Our Service</h2>
+      <figure>
+        <img src="https://via.placeholder.com/700x300.png?text=Our+Service+Screenshot" alt="Screenshot showing the user interface of our service" width="700" height="300" />
+        <figcaption>Screenshot of our service interface</figcaption>
+      </figure>
+
+      <figure>
+        <video controls width="700" height="400" aria-label="Introduction video about our service">
+          <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" type="video/webm" />
+          <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+          Sorry, your browser does not support embedded videos.
+        </video>
+        <figcaption>Watch our introductory video</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="form-section-heading">
+      <h2 id="form-section-heading">Sign Up for Our Service</h2>
+      <form action="#" method="post" aria-describedby="form-instructions" novalidate>
+        <p id="form-instructions">Please fill out the form below to create your account. Fields marked with * are required.</p>
+
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="firstname">First Name *</label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="Joan"
+            required
+            autocomplete="given-name"
+            aria-required="true"
+          />
+
+          <label for="lastname">Last Name *</label>
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            placeholder="Rachael"
+            required
+            autocomplete="family-name"
+            aria-required="true"
+          />
+
+          <label for="email">Email Address *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@example.com"
+            required
+            autocomplete="email"
+            aria-required="true"
+          />
+
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+254701293268 "
+            autocomplete="tel"
+            pattern="^\+?[0-9\s\-]{7,15}$"
+            title="Phone number should be between 7 and 15 digits, may include +, spaces or dashes"
+          />
+
+          <label for="dob">Date of Birth *</label>
+          <input
+            type="date"
+            id="dob"
+            name="dob"
+            required
+            aria-required="true"
+            max="2025-12-31" <!-- Static max date for no JS -->
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+          <label for="username">Username *</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="joanrechael"
+            required
+            minlength="4"
+            maxlength="15"
+            autocomplete="username"
+            aria-required="true"
+          />
+
+          <label for="password">Password *</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="At least 8 characters"
+            required
+            minlength="8"
+            autocomplete="new-password"
+            aria-required="true"
+          />
+
+          <label for="confirm-password">Confirm Password *</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            placeholder="Re-enter your password"
+            required
+            minlength="8"
+            aria-required="true"
+          />
+
+          <label for="subscription">Subscription Plan *</label>
+          <select id="subscription" name="subscription" required aria-required="true">
+            <option value="" disabled selected>Select a plan</option>
+            <option value="basic">Basic</option>
+            <option value="standard">Standard</option>
+            <option value="premium">Premium</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Information</legend>
+          <label for="bio">Tell us about yourself</label>
+          <textarea
+            id="bio"
+            name="bio"
+            rows="4"
+            placeholder="A short bio, hobbies, interests, etc."
+            autocomplete="off"
+          ></textarea>
+
+          <label for="referrer">How did you hear about us? *</label>
+          <input
+            list="referrer-options"
+            id="referrer"
+            name="referrer"
+            placeholder="Select or type"
+            required
+            aria-required="true"
+            autocomplete="off"
+          />
+          <datalist id="referrer-options">
+            <option value="Search Engine"></option>
+            <option value="Social Media"></option>
+            <option value="Friend or Family"></option>
+            <option value="Advertisement"></option>
+            <option value="Other"></option>
+          </datalist>
+
+          <label for="account-id">Your Account ID (readonly)</label>
+          <input
+            type="text"
+            id="account-id"
+            name="account-id"
+            value="ACC123456789"
+            readonly
+            aria-readonly="true"
+          />
+
+          <label>
+            <input type="checkbox" id="terms" name="terms" required aria-required="true" />
+            I agree to the <a href="#" target="_blank" rel="noopener">terms and conditions</a> *
+          </label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Joan Rechael. All rights reserved.</p>
+    <p>&copy; 2025 Enhanced Form Company. All rights reserved.</p>
   </footer>
 </body>
 </html>
